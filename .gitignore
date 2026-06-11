@@ -1,0 +1,15 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Éditeurs
+.vscode/
+.idea/
+
+# Runtime de preview local
+.claude/frames/
+.claude/demo.mov
+
+# Node (si jamais)
+node_modules/
+npm-debug.log*
