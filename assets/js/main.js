@@ -90,12 +90,6 @@
         y.textContent = "(" + p.years + ")";
         titles.appendChild(y);
       }
-      if (p.medium) {
-        const m = document.createElement("small");
-        m.className = "project__medium";
-        m.textContent = p.medium;
-        titles.appendChild(m);
-      }
       link.appendChild(titles);
       block.appendChild(link);
 

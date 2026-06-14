@@ -226,6 +226,11 @@ img { display: block; max-width: 100%; height: auto; }
 }
 .project-detail__desc {
   margin-top: 2.2rem;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  white-space: pre-line;   /* préserve les sauts de paragraphe (\n\n) */
   font-size: 1.05rem;
   line-height: 1.7;
   color: var(--fg-soft);

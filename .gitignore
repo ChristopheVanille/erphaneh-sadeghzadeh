@@ -13,3 +13,6 @@ Thumbs.db
 # Node (si jamais)
 node_modules/
 npm-debug.log*
+
+# Export source Google Takeout (volumineux ; les images utiles sont copiées dans images/)
+published/
