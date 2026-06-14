@@ -71,6 +71,26 @@ img { display: block; max-width: 100%; height: auto; }
 .nav__toggle { display: none; background: none; border: 0; color: inherit; font: inherit; cursor: pointer; text-transform: uppercase; letter-spacing: 0.05em; }
 
 /* -------------------------------------------------------------
+   FOND D'AMBIANCE — photo « A Love Note » (pages galerie)
+   Voile plein écran N&B très sombre + vignettage ; reste derrière
+   les titres (z-index 2) et l'image de survol (z-index 1).
+   ------------------------------------------------------------- */
+.site-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: url("../../images/a-love-note/cover.jpg") center / cover no-repeat;
+  filter: grayscale(100%) brightness(0.34) contrast(1.05);
+}
+.site-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0.25), rgba(0,0,0,0.7));
+}
+
+/* -------------------------------------------------------------
    GALERIE D'ACCUEIL (Work / Films) — colonne unique centrée
    ------------------------------------------------------------- */
 .gallery {
